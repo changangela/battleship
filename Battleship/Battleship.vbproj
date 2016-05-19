@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46FC251C-005A-4C08-B216-829834FFF6D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Battleship.My.MyApplication</StartupObject>
+    <RootNamespace>Battleship</RootNamespace>
+    <AssemblyName>Battleship</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Battleship.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Battleship.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\SettingsLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBattleship.Designer.vb">
+      <DependentUpon>AboutBattleship.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBattleship.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Battleship.Designer.vb">
+      <DependentUpon>Battleship.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Battleship.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.vb">
+      <DependentUpon>Instructions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeaderBoards.Designer.vb">
+      <DependentUpon>LeaderBoards.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LeaderBoards.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Difficulty.Designer.vb">
+      <DependentUpon>Difficulty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Difficulty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSBattleship.Designer.vb">
+      <DependentUpon>SSBattleship.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSBattleship.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBattleship.resx">
+      <DependentUpon>AboutBattleship.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Battleship.resx">
+      <DependentUpon>Battleship.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaderBoards.resx">
+      <DependentUpon>LeaderBoards.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Difficulty.resx">
+      <DependentUpon>Difficulty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSBattleship.resx">
+      <DependentUpon>SSBattleship.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\silent-ocean-waves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winner-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game_over_by_biotwist-d45kacw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flame.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ship%28Wendy Picked It%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Explosion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameOverPic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Titanic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Explosion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Splash.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burning Frigate.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Francis Drake.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guns And Powder.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pirates Hook.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titanic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb-falling-and-exploding-01.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Score.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pirates Hook.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BlissfulVictory.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BlissfulVictory.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfxOFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfxON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgmOFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgmON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instructions.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aboutbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoatyBoatY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoatyBoatX.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashScreenbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+    <None Include="Resources\SettingsLogo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
